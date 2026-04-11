@@ -12,7 +12,8 @@
       "Bash(ls C:/Users/Caylen/my-landing-page/*.JPG C:/Users/Caylen/my-landing-page/*.jpg)",
       "Bash(cmd /c \"dir C:\\\\Users\\\\Caylen\\\\my-landing-page\\\\logo.png.png\")",
       "Bash(ls C:/Users/Caylen/my-landing-page/*.jpg C:/Users/Caylen/my-landing-page/*.JPG C:/Users/Caylen/my-landing-page/*.jpeg C:/Users/Caylen/my-landing-page/*.JPEG C:/Users/Caylen/my-landing-page/*.png C:/Users/Caylen/my-landing-page/*.PNG)",
-      "Bash(ls C:/Users/Caylen/my-landing-page/DSC*)"
+      "Bash(ls C:/Users/Caylen/my-landing-page/DSC*)",
+      "WebFetch(domain:tractiondogtraining.com)"
     ]
   }
 }
