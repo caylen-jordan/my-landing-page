@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(cmd /c \"where node 2>&1 & where python 2>&1 & where php 2>&1\")",
+      "Bash(cmd /c \"where node\")",
+      "Bash(cmd /c \"where python\")",
+      "Bash(cmd /c \"where python3\")",
+      "Bash(cmd /c \"start C:\\\\Users\\\\Caylen\\\\my-landing-page\\\\more-than-dog-training.html\")",
+      "WebFetch(domain:tractionk9.com)",
+      "Bash(ls C:/Users/Caylen/my-landing-page/logo*)",
+      "Bash(ls C:/Users/Caylen/my-landing-page/*.JPG C:/Users/Caylen/my-landing-page/*.jpg)",
+      "Bash(cmd /c \"dir C:\\\\Users\\\\Caylen\\\\my-landing-page\\\\logo.png.png\")",
+      "Bash(ls C:/Users/Caylen/my-landing-page/*.jpg C:/Users/Caylen/my-landing-page/*.JPG C:/Users/Caylen/my-landing-page/*.jpeg C:/Users/Caylen/my-landing-page/*.JPEG C:/Users/Caylen/my-landing-page/*.png C:/Users/Caylen/my-landing-page/*.PNG)",
+      "Bash(ls C:/Users/Caylen/my-landing-page/DSC*)"
+    ]
+  }
+}
