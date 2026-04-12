@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-380977757"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-380977757'); </script> 
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>More Than Dog Training | Hutto, TX</title>
@@ -1653,7 +1654,7 @@
           </p>
         </div>
 
-        <form id="inquiry-form" novalidate aria-label="Inquiry form">
+        <form id="inquiry-form" action="https://formspree.io/f/mvzvejlr" method="POST" novalidate aria-label="Inquiry form">
           <div class="form-row">
             <div class="form-group">
               <label for="f-name">Your Name</label>
@@ -1770,7 +1771,6 @@
     }, { passive: true });
 
     // ── Form submission handler
-    // Replace the body of this function with your real form API (Formspree, etc.)
     document.getElementById('inquiry-form').addEventListener('submit', function(e) {
       e.preventDefault();
 
@@ -1786,17 +1786,45 @@
         return;
       }
 
-      // Simulate send (swap this block for fetch() to your form endpoint)
       btn.textContent = 'Sending…';
       btn.disabled = true;
 
-      setTimeout(() => {
-        this.reset();
-        btn.style.display = 'none';
-        success.style.display = 'flex';
-      }, 800);
+      fetch('https://formspree.io/f/mvzvejlr', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(this)
+      })
+      .then(function(response) {
+        if (response.ok) {
+          success.style.display = 'flex';
+          btn.style.display = 'none';
+        } else {
+          alert('Something went wrong. Please try again or book a call directly.');
+          btn.textContent = 'Send My Inquiry';
+          btn.disabled = false;
+        }
+      })
+      .catch(function() {
+        alert('Something went wrong. Please try again or book a call directly.');
+        btn.textContent = 'Send My Inquiry';
+        btn.disabled = false;
+      });
     });
   </script>
 
-</body>
+</body><!-- Event snippet for Contact Form Submission conversion page -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-380977757/UO7UCLa2qpocEN2E1bUB',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 </html>
