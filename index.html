@@ -1345,7 +1345,6 @@
 
         <div class="hero-ctas">
           <a href="https://tidycal.com/caylen/consultation" target="_blank" rel="noopener noreferrer" class="btn-primary">Book a Free Call</a>
-          <a href="#contact" class="btn-outline">Send an Inquiry</a>
         </div>
       </div>
 
@@ -1830,6 +1829,12 @@
 
   <!-- ─── JAVASCRIPT ────────────────────────────────── -->
   <script>
+    // ── Force scroll to top on load (prevent hash jumping)
+    if (window.location.hash) {
+      history.replaceState(null, null, window.location.pathname);
+    }
+    window.scrollTo(0, 0);
+
     // ── Scroll reveal via IntersectionObserver
     const revealObserver = new IntersectionObserver(
       (entries) => {
