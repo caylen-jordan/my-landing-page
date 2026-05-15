@@ -1886,6 +1886,7 @@
       })
       .then(function(response) {
         if (response.ok) {
+          gtag_report_conversion();
           success.style.display = 'flex';
           btn.style.display = 'none';
         } else {
