@@ -125,9 +125,9 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url('IMG_5599.jpg');
+      background-image: url('IMG_7207.jpg');
       background-size: cover;
-      background-position: center top;
+      background-position: center 40%;
     }
 
     /* Dark lavender-tinted overlay so text stays readable */
@@ -163,12 +163,11 @@
     .hero-content {
       position: relative;
       z-index: 2;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3.5rem;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      max-width: 1120px;
-      text-align: left;
+      max-width: 780px;
+      text-align: center;
     }
 
     .hero-eyebrow {
@@ -213,7 +212,7 @@
     .hero-ctas {
       display: flex;
       gap: 1rem;
-      justify-content: flex-start;
+      justify-content: center;
       flex-wrap: wrap;
       opacity: 0;
       animation: fadeUp 0.9s 0.65s ease forwards;
@@ -991,17 +990,18 @@
       object-position: center;
     }
 
-    /* ─── ABOUT PHOTOS (two portraits side by side) ─ */
+    /* ─── ABOUT PHOTOS (three photos in a row) ─ */
     .about-photos {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1.5fr;
       gap: 0.75rem;
       margin-top: 2rem;
+      height: 320px;
     }
 
     .about-photos img {
       width: 100%;
-      aspect-ratio: 3 / 4;
+      height: 100%;
       object-fit: cover;
       object-position: top;
       border-radius: 3px;
@@ -1269,8 +1269,6 @@
 
       .hero-ctas { justify-content: center; }
 
-      .hero-photo { display: none; }
-
       .bt-inner,
       .about-inner,
       .contact-inner {
@@ -1334,13 +1332,13 @@
         <span class="eyebrow" style="display:inline-block; margin-bottom:1.25rem;">Austin's Board &amp; Train Specialist</span>
 
         <h1 id="hero-heading" class="hero-headline">
-          Your Dog's<br>
-          <em>Transformation</em><br>
-          Starts Here.
+          Done<br>
+          <em>white-knuckling</em><br>
+          every walk?
         </h1>
 
         <p class="hero-sub">
-          Off-leash freedom. Calm on leash.<br>A dog you can take anywhere.
+          The lunging, the embarrassment, the "I've tried everything" feeling — you're in the right place.
         </p>
 
         <div class="hero-ctas">
@@ -1348,9 +1346,6 @@
         </div>
       </div>
 
-      <div class="hero-photo reveal reveal-d2">
-        <img src="IMG_7200.JPG" alt="Dog training with Caylen" class="hero-portrait-img">
-      </div>
     </div>
 
     <div class="hero-scroll-hint" aria-hidden="true">
@@ -1374,6 +1369,21 @@
   </div>
 
 
+  <!-- ─── YOU'RE IN THE RIGHT PLACE ──────────────────────── -->
+  <section style="background: var(--black-soft); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 4rem 2rem;" aria-labelledby="rp-heading">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h2 id="rp-heading" style="font-family:var(--font-display); font-size:clamp(1.4rem,3.5vw,2rem); font-weight:700; color:var(--white); text-align:center; margin-bottom:2rem;">You're in the right place if…</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1.25rem; margin-bottom:2.5rem;">
+        <div style="background:var(--black); border:1px solid var(--border); border-radius:12px; padding:1.5rem 1.25rem; color:var(--white-dim); font-size:0.97rem; line-height:1.6;">Your dog loses it the second another dog or person comes into view</div>
+        <div style="background:var(--black); border:1px solid var(--border); border-radius:12px; padding:1.5rem 1.25rem; color:var(--white-dim); font-size:0.97rem; line-height:1.6;">You dream about letting your dog off leash but don't trust them for a second</div>
+        <div style="background:var(--black); border:1px solid var(--border); border-radius:12px; padding:1.5rem 1.25rem; color:var(--white-dim); font-size:0.97rem; line-height:1.6;">You have a puppy and want to do this right from the start</div>
+        <div style="background:var(--black); border:1px solid var(--border); border-radius:12px; padding:1.5rem 1.25rem; color:var(--white-dim); font-size:0.97rem; line-height:1.6;">You've already tried another trainer and you're still struggling</div>
+      </div>
+      <p style="text-align:center;"><a href="https://tidycal.com/caylen/consultation" target="_blank" rel="noopener noreferrer" class="btn-primary">Sound familiar? Book a Free Call →</a></p>
+    </div>
+  </section>
+
+
   <!-- ─── PAIN POINT HOOK ──────────────────────────────── -->
   <div style="background: var(--black-soft); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 3rem 2rem; text-align: center;">
     <div style="max-width: 680px; margin: 0 auto;">
@@ -1389,10 +1399,10 @@
       <div class="testi-card testi-card--featured reveal">
         <div class="testi-mark" aria-hidden="true">&ldquo;</div>
         <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p class="testi-text">"Caylen was truly an incredible trainer for our dog, Ace! We got Ace just a few months before finding out we were expecting, so it was really important for us to have him well-trained. The 4-week board-and-train program was absolutely perfect for our situation. Ace learned essential commands like place and how to walk calmly next to a stroller, both on and off leash. Since bringing our baby home, those skills have been invaluable. He's become the best dog we could have ever asked for — and that's all thanks to Caylen. We highly recommend More Than Dog Training to every dog parent!"</p>
+        <p class="testi-text">"Caylen taught me that we both deserved better. Now, our daily walks are relaxed and I am no longer fearful of her lunging at strangers or barking at other dogs. Caylen gave me back hope."</p>
         <div class="testi-author">
-          <span class="testi-name">Danielle</span>
-          <span class="testi-detail">Board &amp; Train · 4 Weeks</span>
+          <span class="testi-name">Angie</span>
+          <span class="testi-detail">Austin, TX &nbsp;·&nbsp; German Shepherd</span>
           <span class="testi-source">&#9733; Google Review</span>
         </div>
       </div>
@@ -1408,9 +1418,10 @@
         <div class="bt-text">
           <span class="eyebrow reveal">Featured Program</span>
           <h2 id="bt-heading" class="section-headline reveal reveal-d1">The Program That<br>Changes Everything</h2>
-          <p class="reveal reveal-d2">A full board &amp; train isn't just training — it's a transformation. Your dog lives with Caylen, gets full days of focused work, and comes home as the dog you always knew they could be.</p>
+          <p class="reveal reveal-d2">Most board &amp; trains warehouse your dog for a month and hand them back with a pamphlet. This isn't that. Your dog lives in my home — not a kennel. They work with me every single day in real environments: neighborhoods, parks, distractions. They come back as the dog you knew they could be.</p>
           <p class="pricing-note reveal reveal-d3">Pricing is discussed on your discovery call — because your dog deserves a custom plan, not a price list.</p>
           <a href="#contact" class="btn-primary reveal reveal-d4">Inquire Now</a>
+          <p class="reveal reveal-d4" style="margin-top:0.85rem;font-size:0.78rem;color:var(--lavender);letter-spacing:0.03em;">Limited to 3 dogs at a time — spots fill quickly.</p>
         </div>
 
         <div class="reveal reveal-d2">
@@ -1458,6 +1469,16 @@
         <div class="testi-author">
           <span class="testi-name">Gio</span>
           <span class="testi-detail">Board &amp; Train · Reactive Dog</span>
+          <span class="testi-source">&#9733; Google Review</span>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-d3">
+        <div class="testi-mark" aria-hidden="true">&ldquo;</div>
+        <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="testi-text">"If we had not found Caylen, I am skeptical that we would have kept our dog much longer. Caylen was amazing — I mean AMAZING. She observed us, tailored everything to our family, and now I have no regrets about Daisy or concerns about how she behaves."</p>
+        <div class="testi-author">
+          <span class="testi-name">Daisy's Family</span>
+          <span class="testi-detail">Hutto, TX &nbsp;·&nbsp; Herding Breed</span>
           <span class="testi-source">&#9733; Google Review</span>
         </div>
       </div>
@@ -1527,6 +1548,7 @@
           <div class="about-photos reveal reveal-d3">
             <img src="DSC09880_Original.jpg" alt="Caylen with a dog" loading="lazy">
             <img src="IMG_0410.JPG" alt="Caylen training at the river" loading="lazy">
+            <img src="IMG_7200.JPG" alt="Caylen with her dogs" loading="lazy" style="object-position: center;">
           </div>
         </div>
 
